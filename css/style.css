@@ -14,23 +14,16 @@
 	font-style: bold;
  }
  
+ html {
+	font-size: 16px;
+ }
+ 
  body {
 	/*Блочная модель*/
 	margin: 0;
 	padding: 0;
 	/*Типографика*/
 	font-family: open sans, sans-serif;
-
-	content: '';
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-color: #000000;
-	opacity: 0.6;
-	z-index: 1;
  }
  
  a {
@@ -40,7 +33,7 @@
  
  span {
 	/*Типографика*/
-	font-size: 12px;
+	font-size: 0.75rem;
 	font-weight: 700;
  }
  
@@ -113,7 +106,7 @@
  
  .menu-list-link {
 	/*Типографика*/
-	font-size: 13px;
+	font-size: 0.8125rem;
 	/*Оформление*/
 	color: #ffffff;
  }
@@ -129,12 +122,22 @@
 	margin: 0 auto;
 	padding: 105px 0 125px 0;
 	/*Типографика*/
-	font-size: 45px;
+	font-size: 2.8125rem;
 	text-align: center;
 	text-transform: uppercase;
-	line-height: 75px;
+	line-height: 4.6875rem;
 	/*Оформление*/
 	color: #ffffff;
+ }
+ 
+ .popup-mask {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	 background-color: #00000070;
+	 z-index: 1;
  }
  
  .popup {
@@ -147,13 +150,13 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -35%);
-	z-index: 1;
+	z-index: 2;
  }
  
  .popup-header {
 	margin: 0;
-	font-size: 20px;
-	line-height: 29.15px;
+	font-size: 1.25rem;
+	line-height: 1.822rem;
 	text-transform: uppercase;
 	text-align: center;
  }
@@ -173,8 +176,8 @@
  }
  
  .label-span-select {
-	font-size: 13px;
-	line-height: 40px;
+	font-size: 0.8125rem;
+	line-height: 2.5rem;
 	font-weight: 400;
  }
  
@@ -189,7 +192,7 @@
 	background-image: url("../svg/form-arrows.svg");
 	background-repeat: no-repeat;
 	background-position: right 14px center;
-	background-size: 11px;
+	background-size: 0.6875rem;
  }
  
  .mailing-container {
@@ -204,7 +207,7 @@
  }
  
  .label-question-subscribe {
-	font-size: 13px;
+	font-size: 0.8125rem;
 	font-weight: 400;
 	margin-right: 16px;
 	display: flex;
@@ -217,7 +220,7 @@
 	background-image: url("../svg/form-empty-circle.svg");
 	width: 18px;
 	height: 18px;
-	background-size: 18px;
+	background-size: 1.125rem;
 	margin-right: 5px;
  }
  
@@ -231,7 +234,7 @@
  }
  
  .span-wishes {
-	font-size: 13px;
+	font-size: 0.8125rem;
 	font-weight: 400;
 	margin-top: 32px;
  }
@@ -258,7 +261,7 @@
 	margin-top: 26px;
 	padding: 0;
 	/*Типографика*/
-	font-size: 14px;
+	font-size: 0.875rem;
 	text-transform: uppercase;
 	/*Оформление*/
 	background-color: #b59f5b;
@@ -289,11 +292,11 @@
  
  .title-most-popular {
 	margin: 0;
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: 700;
 	text-align: center;
 	text-transform: uppercase;
-	line-height: 29.15px;
+	line-height: 1.822rem;
  }
  
  .title-most-popular:after {
@@ -364,8 +367,8 @@
  }
  
  .link-most-popular {
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
 	text-transform: uppercase;
 	color: #ffffff;
  }
@@ -418,7 +421,7 @@
 	/*Блочная модель*/
 	margin-right: 20px;
 	/*Типографика*/
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	/*Оформление*/
@@ -439,8 +442,8 @@
  
  .article-header-link {
 	/*Типографика*/
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
 	text-transform: uppercase;
 	/*Оформление*/
 	color: #000000;
@@ -461,15 +464,15 @@
 	/*Блочная модель*/
 	margin-right: 15px;
 	/*Типографика*/
-	font-size: 12px;
+	font-size: 0.75rem;
 	/*Оформление*/
 	color: #a6a6a6;
  }
  
  .article-paragraph {
 	/*Типографика*/
-	font-size: 15px;
-	line-height: 22px;
+	font-size: 0.9375rem;
+	line-height: 1.375rem;
  }
  
  .sidebar {
@@ -488,8 +491,8 @@
 	/*Блочная модель*/
 	margin: 0;
 	/*Типографика*/
-	font-size: 14px;
-	line-height: 18px;
+	font-size: 0.875rem;
+	line-height: 1.125rem;
 	text-transform: uppercase;
 	text-align: center;
  }
@@ -533,7 +536,7 @@
 	/*Блочная модель*/
 	padding-bottom: 3px;
 	/*Типографика*/
-	font-size: 12px;
+	font-size: 0.75rem;
 	/*Оформление*/
 	color: #868686;
  }
@@ -542,8 +545,8 @@
 	/*Блочная модель*/
 	margin: 0;
 	/*Типографика*/
-	font-size: 14px;
-	line-height: 18px;
+	font-size: 0.875rem;
+	line-height: 1.125rem;
 	text-transform: uppercase;
  }
  
@@ -593,7 +596,7 @@
 	/*Позиционирование*/
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 18px;
+	background-size: 1.125rem;
 	/*Оформление*/
 	background-image: url("../svg/search.svg");
 	background-color: #b59f5b;
@@ -628,10 +631,10 @@
 	/*Блочная модель*/
 	margin: 0;
 	/*Типографика*/
-	font-size: 14px;
+	font-size: 0.875rem;
 	text-transform: uppercase;
 	text-align: center;
-	line-height: 29.15px;
+	line-height: 1.822rem;
  }
  
  .contact-header::after {
@@ -669,7 +672,7 @@
 	margin-top: 18px;
 	padding: 0;
 	/*Типографика*/
-	font-size: 14px;
+	font-size: 0.875rem;
 	text-transform: uppercase;
 	/*Оформление*/
 	background-color: #b59f5b;
@@ -691,8 +694,8 @@
 	/*Блочная модель*/
 	margin: 0;
 	/*Типографика*/
-	font-size: 14px;
-	line-height: 29.15px;
+	font-size: 0.875rem;
+	line-height: 1.822rem;
 	text-transform: uppercase;
 	text-align: center;
  }
@@ -719,7 +722,7 @@
 	display: inline-block;
 	padding: 8px 14px;
 	/*Типографика*/
-	font-size: 12px;
+	font-size: 0.75rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	/*Оформление*/
@@ -736,8 +739,8 @@
 	/*Блочная модель*/
 	margin: 0;
 	/*Типографика*/
-	font-size: 14px;
-	line-height: 29.15px;
+	font-size: 0.875rem;
+	line-height: 1.822rem;
 	text-transform: uppercase;
 	text-align: center;
  }
@@ -763,9 +766,9 @@
  
  .topic-link {
 	/*Типографика*/
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 700;
-	line-height: 47px;
+	line-height: 2.9375rem;
 	/*Оформление*/
 	color: #000000;
  }
@@ -795,9 +798,9 @@
  
  .section-product-title {
 	margin: 0;
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: 700;
-	line-height: 29.15px;
+	line-height: 1.822rem;
 	text-transform: uppercase;
 	text-align: center;
  }
@@ -832,15 +835,15 @@
  }
  
  .card-product-title {
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
 	text-transform: uppercase;
 	margin: 0;
  }
  
  .card-product-paragraph {
-	font-size: 15px;
-	line-height: 22px;
+	font-size: 0.9375rem;
+	line-height: 1.375rem;
 	font-style: normal;
  }
  
@@ -865,17 +868,17 @@
  
  .card-price {
 	font-weight: 700;
-	line-height: 24px;
+	line-height: 1.5rem;
 	margin: 0;
  }
  
  .card-price-was {
 	text-decoration: line-through;
-	font-size: 14px;
+	font-size: 0.875rem;
  }
  
  .card-price-now {
-	font-size: 20px;
+	font-size: 1.25rem;
  }
  
  .card-button-order {
@@ -884,7 +887,7 @@
 	height: 49px;
 	padding: 0;
 	/*Типографика*/
-	font-size: 14px;
+	font-size: 0.875rem;
 	text-transform: uppercase;
 	font-weight: 700;
 	/*Оформление*/
