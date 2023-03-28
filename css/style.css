@@ -1,6 +1,6 @@
 @font-face {
 	/*Типографика*/
-	font-family: open sans;
+	font-family: "open sans";
 	src: url("../fonts/OpenSans-Regular.woff");
 	font-weight: 400;
 	font-style: normal;
@@ -8,10 +8,10 @@
 
 @font-face {
 	/*Типографика*/
-	font-family: open sans;
+	font-family: "open sans";
 	src: url("../fonts/OpenSans-Bold.woff");
 	font-weight: 700;
-	font-style: bold;
+	font-style: normal;
 }
 
 html {
@@ -23,7 +23,7 @@ body {
 	margin: 0;
 	padding: 0;
 	/*Типографика*/
-	font-family: open sans, sans-serif;
+	font-family: "open sans", sans-serif;
 }
 
 a {
@@ -137,7 +137,7 @@ ul {
 	position: fixed;
 	top: 0;
 	right: 0;
-	bottom: 14vh;
+	bottom: 0;
 	left: 0;
 	background-color: #00000070;
 	z-index: 1;
@@ -146,13 +146,13 @@ ul {
 .popup {
 	width: 390px;
 	min-height: 589px;
-	padding: 50px 30px;
+	padding: 47px 30px;
 	box-sizing: border-box;
 	background-color: #ffffff;
 	position: absolute;
 	top: 30%;
 	left: 50%;
-	transform: translate(-50%, -10%);
+	transform: translate(-50%, -18%);
 	z-index: 2;
 }
 
@@ -594,15 +594,11 @@ ul {
 	color: #b59f5b;
 }
 
-.section-search {
+.search-form {
 	/*Позиционирование*/
 	position: relative;
 	/*Блочная модель*/
 	margin-bottom: 52px;
-}
-
-.search-form {
-	/*Блочная модель*/
 	display: flex;
 }
 
@@ -645,7 +641,7 @@ ul {
 .visually-hidden {
 	/*Позиционирование*/
 	position: absolute;
-	clip: rect(0 0 0 0);
+	clip: rect(0, 0, 0, 0);
 	/*Блочная модель*/
 	width: 1px;
 	height: 1px;
