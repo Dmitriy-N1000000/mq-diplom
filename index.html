@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MQ diploma</title>
+	<title>MQ Diploma</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,6 +15,15 @@
 				<img class="header-logo" src="svg/noemi-logo.svg" alt="Логотип Noemi">
 			 </a>
 			 <nav class="menu">
+				<svg class="header-burger" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+					 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+					 <g id="SVGRepo_iconCarrier">
+						  <path fill-rule="evenodd" clip-rule="evenodd"
+								  d="M3 6C3 5.44772 3.44772 5 4 5H20C20.5523 5 21 5.44772 21 6C21 6.55228 20.5523 7 20 7H4C3.44772 7 3 6.55228 3 6ZM3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12ZM3 18C3 17.4477 3.44772 17 4 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18Z"
+								  fill="#ffffff"></path>
+					 </g>
+				</svg>
 				<ul class="menu-list">
 				  <li class="menu-list-item">
 					 <a class="menu-list-link" href="#0">Главная</a>
@@ -65,7 +74,7 @@
 			 </label>
 			 <button class="submit-popup-form" type="submit">Отправить</button>
 			 <button class="popup-close" type="button"></button>
-		</form>
+		  </form>
 		</div>
 		
 		<section class="section-most-popular">
@@ -313,15 +322,15 @@
 				</div>
 			 </section>
 	 
-			<form class="search-form">
+			 <form class="search-form">
 				<label class="label-search" for="input-search">
-					<span class="label-text visually-hidden">Поиск по сайту</span>
-					<input class="search-input" type="search" placeholder="Найти..." id="input-search">
+				  <span class="label-text visually-hidden">Поиск по сайту</span>
+				  <input class="search-input" type="search" placeholder="Найти..." id="input-search">
 				</label>
 				<button class="search-button" type="submit">
-					<span class="visually-hidden">Поиск</span>
+				  <span class="visually-hidden">Поиск</span>
 				</button>
-			</form>
+			 </form>
 	 
 			 <section class="section-contact">
 				<form class="contact-form">
@@ -397,7 +406,12 @@
 		  <h3 class="section-product-title">Наши изделия</h3>
 		  <div class="section-product-content">
 			 <article class="article-card-product">
-				<img class="image-card-product" src="images/shop-item-desk1.jpg" alt="Подушка с надписью Hang out spot и стрелочкой вниз">
+				<picture class="picture-shop">
+				  <source media="(min-width: 1201px)" class="shop-img" srcset="images/shop-item-desk1.jpg">
+				  <source media="(min-width: 641px) and (max-width: 1200px)" class="shop-img" srcset="images/shop-item-tablet1.jpg">
+				  <source media="(max-width: 640px)" class="shop-img" srcset="images/shop-item-mobile1.jpg">
+				  <img class="image-card-product" src="images/shop-item-desk1.jpg" alt="Подушка с надписью Hang out spot и стрелочкой вниз">
+				</picture>
 				<div class="card-product-content">
 				  <h4 class="card-product-title">Подушки на диван</h4>
 				  <p class="card-product-paragraph">Набор из двух подушек с модными принтами. Видео о создании <a class="card-product-link" href="#0">здесь</a>.
@@ -412,7 +426,12 @@
 				</div>
 			 </article>
 			 <article class="article-card-product">
-				<img class="image-card-product" src="images/shop-item-desk2.jpg" alt="Сидит самодельная зайка в голубеньком платьице">
+				<picture class="picture-shop">
+				  <source media="(min-width: 1201px)" class="shop-img" srcset="images/shop-item-desk2.jpg">
+				  <source media="(min-width: 641px) and (max-width: 1200px)" class="shop-img" srcset="images/shop-item-tablet2.jpg">
+				  <source media="(max-width: 640px)" class="shop-img" srcset="images/shop-item-mobile2.jpg">
+				  <img class="image-card-product" src="images/shop-item-desk2.jpg" alt="Подушка с надписью Hang out spot и стрелочкой вниз">
+				</picture>
 				<div class="card-product-content">
 				  <h4 class="card-product-title">Кукла «Зайчик»</h4>
 				  <p class="card-product-paragraph">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="card-product-link" href="#0">весенняя серия постов</a> в блоге и несколько подкастов.
@@ -427,7 +446,12 @@
 				</div>
 			 </article>
 			 <article class="article-card-product">
-				<img class="image-card-product" src="images/shop-item-desk3.jpg" alt="Подушка с надписью Hang out spot и стрелочкой вниз">
+				<picture class="picture-shop">
+				  <source media="(min-width: 1201px)" class="shop-img" srcset="images/shop-item-desk3.jpg">
+				  <source media="(min-width: 641px) and (max-width: 1200px)" class="shop-img" srcset="images/shop-item-tablet3.jpg">
+				  <source media="(max-width: 640px)" class="shop-img" srcset="images/shop-item-mobile3.jpg">
+				  <img class="image-card-product" src="images/shop-item-desk3.jpg" alt="Подушка с надписью Hang out spot и стрелочкой вниз">
+				</picture>
 				<div class="card-product-content">
 				  <h4 class="card-product-title">Шестиугольная рамка</h4>
 				  <p class="card-product-paragraph">Необычная рамка для украшения дома из видео <a class="card-product-link" href="#0">«Как сделать рамку из подручных средств за 30 минут»</a>
