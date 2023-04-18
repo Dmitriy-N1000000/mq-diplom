@@ -90,7 +90,7 @@ input {
   align-items: center;
   /*Блочная модель*/
   display: flex;
-  max-width: 1200px;
+  max-width: 72.3vw;
   margin: 0 auto;
   padding-top: 28px;
   /*Типографика*/
@@ -104,7 +104,11 @@ input {
 }
 
 .header-burger {
-  width: 32px;
+  /* position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px); */
+  display: none;
 }
 
 .menu-list {
@@ -133,7 +137,7 @@ input {
 
 .header-title {
   /*Блочная модель*/
-  max-width: 700px;
+  width: 42.2vw;
   margin: 0 auto;
   padding: 99px 0 125px 0;
   /*Типографика*/
@@ -337,10 +341,10 @@ input {
 .article-most-popular {
   display: flex;
   align-items: flex-end;
-  width: 100%;
+  width: 100vw;
   background-size: cover;
-  height: 320px;
-  padding: 0 21px 16px 21px;
+  min-height: 320px;
+  padding: 0 21px 16px;
   box-sizing: border-box;
   
   background-repeat: no-repeat;
@@ -407,9 +411,9 @@ input {
 
 .content-container {
   /*Блочная модель*/
-  max-width: 1200px;
+  width: 72.3vw;
   display: flex;
-  margin: 64px auto 0 auto;
+  margin: 64px auto 53px auto;
   padding: 0 15px;
   box-sizing: border-box;
 }
@@ -419,7 +423,7 @@ input {
   flex-direction: column;
   /*Блочная модель*/
   display: flex;
-  margin: 0 10% 53px 0;
+  margin-right: 10%;
 }
 
 .article-container {
@@ -474,12 +478,12 @@ input {
   /*Блочная модель*/
   margin-top: 4px;
   margin-bottom: 0;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
 
 .article-header-link {
   /*Типографика*/
-  font-size: 1.25rem;
-  line-height: 1.5rem;
   text-transform: uppercase;
   /*Оформление*/
   color: #000000;
@@ -577,12 +581,10 @@ input {
   flex-direction: column;
   /*Блочная модель*/
   display: flex;
-  margin-top: -6px;
+  margin-top: -4px;
 }
 
 .last-post-date {
-  /*Блочная модель*/
-  padding-bottom: 3px;
   /*Типографика*/
   font-size: 0.75rem;
   /*Оформление*/
@@ -717,6 +719,7 @@ input {
   padding: 0;
   /*Типографика*/
   font-size: 0.875rem;
+  font-weight: 700;
   text-transform: uppercase;
   /*Оформление*/
   background-color: #b59f5b;
@@ -836,7 +839,7 @@ input {
 
 .section-product {
   clear: both;
-  max-width: 1200px;
+  width: 72.3vw;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -884,8 +887,8 @@ input {
 .card-product-content {
   box-sizing: border-box;
   border: 3px solid #b59f5b;
-  padding: 49px 6.1% 26px 6.1%;
-  height: 267px;
+  padding: 51px 6.1% 26px 6.1%;
+  min-height: 267px;
   position: relative;
 }
 
@@ -959,8 +962,9 @@ input {
 
 .footer-page {
   /*Блочная модель*/
-  max-width: 1170px;
+  width: 72.3vw;
   margin: 0 auto 41px auto;
+  padding: 0 15px;
   /*Разное*/
   clear: both;
 }
@@ -1033,8 +1037,8 @@ input {
   }
   
   .header-flex-container {
-    padding-top: 40px;
-    width: 91%;
+    padding-top: 43px;
+    max-width: 91vw;
   }
   
   .header-logo {
@@ -1042,24 +1046,30 @@ input {
     width: 155px;
   }
   
+  .header-burger {
+    display: inline;
+    width: 32px;
+  }
+  
   .header-title {
     font-size: 2.5rem;
     line-height: 3.4375rem;
-    width: 85%;
-    padding-top: 88px;
+    width: 80vw;
+    padding-top: 85px;
     padding-bottom: 114px;
   }
   
   .menu-list {
-    position: absolute;
+/*     position: absolute;
     width: 1px;
     height: 1px;
-    clip: rect(1px, 1px, 1px, 1px);
+    clip: rect(1px, 1px, 1px, 1px); */
+    display: none;
   }
   
   .popup {
     top: 20%;
-    transform: translate(-50%, +2%);
+    transform: translate(-50%, 0%);
     padding-bottom: 53px;
   }
   
@@ -1075,6 +1085,10 @@ input {
   
   .popup-select {
     background-size: 0.5625rem;
+  }
+  
+  .label-question-subscribe {
+    margin-right: 35px;
   }
     
   .label-question-subscribe:before {
@@ -1109,12 +1123,16 @@ input {
   .article-most-popular {
     box-sizing: border-box;
     width: calc(50% - 2px);
-    height: 247px;
+    min-height: 247px;
     background-position: center bottom;
   }
   
   .card-most-popular {
-    padding: 34px 33px 27px;
+    padding: 34px 28px 27px;
+  }
+  
+  .article-most-popular:nth-child(1) .card-most-popular {
+    padding-right: 77px;
   }
   
   .header-most-popular {
@@ -1123,13 +1141,14 @@ input {
   }
   
   .content-container {
+    width: 91.2vw;
     margin-top: 51px;
-    padding: 0 31px;
+    margin-bottom: 35px;
+    padding: 0;
   }
 
   .main-content {
     margin-right: 5%;
-    margin-bottom: 25px;
   }
   
   .article-container {
@@ -1150,7 +1169,7 @@ input {
   
   .article-container:nth-child(n+2) {
     /*Блочная модель*/
-    margin-top: 39px;
+    margin-top: 32px;
   }
   
   .article-image {
@@ -1160,29 +1179,54 @@ input {
   }
   
   .article-content {
-    padding: 0;
+    padding-right: 0;
   }
   
   .article-content .article-teg-list {
-    margin-top: 10px;
+    margin-top: 8px;
   }
   
-  .article-header-link {
+  .article-header {
     font-size: 1.0625rem;
-    line-height: 1.375rem;    
+    line-height: 1.375rem;
+    margin-top: 8px;
   }
   
   .date-and-author {
-    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-bottom: 27px;
+  }
+  
+  .article-paragraph {
+    padding-right: 5px;
+  }
+  
+  .article-paragraph-secondary {
+    margin-bottom: 10px;
+  }
+  
+  .last-post-image {
+    margin-right: 17px;
   }
   
   .section-product {
     margin-bottom: 50px;
+    width: 90.9vw;
+    padding: 0;
   }
   
   .section-product-title {
     font-size: 1.125rem;
     line-height: 1.8125rem;    
+  }
+  
+  .section-product-title:after {
+    margin-top: 5px;
+  }
+
+  .section-product-content {
+    flex-wrap: wrap;
+    gap: 20px;
   }
   
   .article-card-product {
@@ -1192,9 +1236,16 @@ input {
     align-items: center;
   }
   
-  .section-product-content {
-    flex-wrap: wrap;
-    gap: 20px;
+  .image-card-product {
+    margin-bottom: -37px;
+  }
+  
+  .card-product-content {
+    padding-top: 49px;
+  }
+  
+  .article-card-product:nth-child(3) .card-product-content {
+    min-height: 243px;
   }
   
   .card-product-title {
@@ -1202,14 +1253,19 @@ input {
     line-height: 1.375rem;    
   }
   
+  .footer-page {
+    padding: 0;
+    width: 90.9vw;
+  }
+  
   .social-icons {
-    margin-bottom: 55px;
+    margin-bottom: 45px;
   }
 }
 
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
   .most-popular-content {
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
   }
   
   .article-most-popular {
@@ -1225,7 +1281,7 @@ input {
   
   .header-flex-container {
     flex-wrap: wrap;
-    height: 280px;
+    height: 290px;
     align-items: flex-end;
     padding-top: 0;
   }
@@ -1236,42 +1292,44 @@ input {
   
   .header-logo {
     padding-left: 0;
-    width: 100%;
+    width: 260px;
   }
   
   .header-burger {
-    width: 28px;
+    display: inline;
+    width: 30px;
     position: absolute;
-    top: 32px;
-    right: 16px;
+    top: 26px;
+    right: 12px;
   }
   
   .menu-list {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    clip: rect(1px, 1px, 1px, 1px);
+    display: none;
   }
   
   .header-title {
     font-size: 1.625rem;
     line-height: 2.25rem;
-    width: 82%;
-    padding-top: 40px;
+    width: 82vw;
+    padding-top: 30px;
     padding-bottom: 210px;
   }
   
   .popup {
     width: 330px;
     min-height: 545px;
-    padding: 23px 30px 30px 30px;
-    top: 30%;
+    padding: 23px 27px 30px 23px;
+    top: 25%;
     transform: translate(-50%, -19%);
   }
   
   .popup-header {
     font-size: 1rem;
     line-height: 1.822rem;
+  }
+  
+  .label-question-subscribe {
+    margin-right: 35px;
   }
   
   .label-question-subscribe:before {
@@ -1281,21 +1339,21 @@ input {
   }
   
   .field-wishes {
-    width: 270px;
+    width: 100%;
   }
   
   .submit-popup-form {
-    width: 270px;
+    width: 100%;
   }
   
   .popup-close {
     width: 28px;
     height: 28px;
-    top: -36px;
+    top: -33px;
   }
   
   .section-most-popular {
-    margin-top: 35px;
+    margin-top: 39px;
   }
   
   .title-most-popular {
@@ -1303,23 +1361,29 @@ input {
     line-height: 1.5;
   }
   
+  .title-most-popular:after {
+    margin-top: 7px;
+    margin-bottom: 24px;
+  }
+  
   .most-popular-content {
     flex-wrap: wrap;
+    gap: 2px;
   }
   
   .article-most-popular {
-    max-width: 100%;
-    height: 230px;
-    padding: 0 14px 16px;
+    max-width: 100vw;
+    min-height: 232px;
+    padding: 0 15px 16px;
     background-position: center bottom;
   }
   
   .card-most-popular {
-    padding: 25px 16px 15px;
+    padding: 32px 28px 25px 19px;
   }
   
   .article-most-popular:nth-child(1) .card-most-popular {
-    padding-right: 80px;
+    padding-right: 90px;
   }
   
   .header-most-popular {
@@ -1329,15 +1393,15 @@ input {
   
   .content-container {
     flex-direction: column;
-    max-width: 94.2%;
+    width: 92.4vw;
     margin-top: 45px;
-    margin-bottom: 37px;
+    margin-bottom: 32px;
     padding: 0;
   }
   
   .main-content {
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
   }
   
   .article-container {
@@ -1348,29 +1412,35 @@ input {
     content: '';
     display: block;
     border-bottom: 3px solid #eeeeee;
-    margin: 10px 0 8px;
+    margin: 15px 0 8px;
   }
 
   .article-container:nth-child(n+2) {
-    margin-top: 27px;
+    margin-top: 26px;
   }
   
   .article-image {
     min-width: 100%;
+    min-height: auto;
     margin-right: 0;
   }
   
-  .article-content .article-teg-list {
-    margin-top: 10px;
+  .article-content {
+    padding-right: 6px;
   }
   
-  .article-header-link {
+  .article-content .article-teg-list {
+    margin-top: 6px;
+  }
+  
+  .article-header {
     font-size: 1rem;
     line-height: 1.25rem;
+    margin-top: 7px;
   }
   
   .date-and-author {
-    margin: 18px 0 15px;
+    margin: 18px 0 14px;
   }
   
   .article-paragraph {
@@ -1378,8 +1448,12 @@ input {
     line-height: 1.25rem;
   }
   
+  .article-paragraph-first {
+    margin-bottom: 5px;
+  }
+  
   .article-paragraph-secondary {
-    margin-bottom: 10px;
+    margin-bottom: 3px;
   }
   
   .sidebar {
@@ -1392,11 +1466,15 @@ input {
   }
   
   .last-posts-header:after {
-    margin: 6px auto 35px auto;
+    margin: 4px auto 28px auto;
   }
   
   .last-post-image {
-    margin-right: 15px;
+    margin-right: 20px;
+  }
+  
+  .last-post-date {
+    padding-bottom: 2px;
   }
   
   .search-form {
@@ -1411,8 +1489,12 @@ input {
     width: 100%;
   }
   
+  .search-button {
+    flex-shrink: 0;
+  }
+  
   .section-contact {
-    margin-bottom: 35px;
+    margin-bottom: 38px;
   }
   
   .contact-header {
@@ -1429,7 +1511,7 @@ input {
   }
   
   .section-tegs {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   
   .section-teg-header {
@@ -1443,7 +1525,9 @@ input {
   }
   
   .section-product {
-    margin-bottom: 45px;
+    margin-bottom: 42px;
+    width: 92.5vw;
+    padding: 0;
   }
   
   .section-product-title {
@@ -1460,11 +1544,16 @@ input {
   }
   
   .article-card-product:nth-child(n+2) {
-    margin-top: 30px;
+    margin-top: 24px;
+  }
+  
+  .image-card-product {
+    margin-bottom: -37px;
   }
   
   .card-product-content {
-    height: auto;
+    min-height: auto;
+    padding: 46px 5.7% 26px;
   }
   
   .card-product-title {
@@ -1473,12 +1562,14 @@ input {
   }
   
   .footer-page {
-    max-width: 91.7%;
+    width: 91.7vw;
     margin-bottom: 47px;
+    padding: 0;
   }
   
   .social-icons {
-    margin-bottom: 53px;
+    margin-bottom: 46px;
+    padding-bottom: 27px;
   }
 }
 
@@ -1489,14 +1580,5 @@ input {
   
   .article-most-popular {
     width: calc(50% - 2px);
-  }
-}
-
-@media (min-width: 1201px) {
-  .header-burger {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    clip: rect(1px, 1px, 1px, 1px);
   }
 }
